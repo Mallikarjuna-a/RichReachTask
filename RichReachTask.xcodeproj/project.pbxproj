@@ -61,6 +61,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06219FEB25A2672900C495D6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				06309EFE25A09F2600F783BF /* ViewController.swift */,
+				06309F2225A0A91400F783BF /* TableViewCells */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		06219FEC25A2675C00C495D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				06309F0525A09F2800F783BF /* LaunchScreen.storyboard */,
+				06309F0025A09F2600F783BF /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		06219FED25A2679300C495D6 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
 		06309EEE25A09F2600F783BF = {
 			isa = PBXGroup;
 			children = (
@@ -82,11 +107,10 @@
 			children = (
 				06309EFA25A09F2600F783BF /* AppDelegate.swift */,
 				06309EFC25A09F2600F783BF /* SceneDelegate.swift */,
-				06309EFE25A09F2600F783BF /* ViewController.swift */,
-				06309F2225A0A91400F783BF /* TableViewCells */,
-				06309F0025A09F2600F783BF /* Main.storyboard */,
+				06219FED25A2679300C495D6 /* Modal */,
+				06219FEC25A2675C00C495D6 /* View */,
+				06219FEB25A2672900C495D6 /* Controller */,
 				06309F0325A09F2800F783BF /* Assets.xcassets */,
-				06309F0525A09F2800F783BF /* LaunchScreen.storyboard */,
 				06309F0825A09F2800F783BF /* Info.plist */,
 			);
 			path = RichReachTask;
