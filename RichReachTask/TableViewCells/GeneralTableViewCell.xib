@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GeneralCell" rowHeight="100" id="KGk-i7-Jjw" customClass="GeneralTableViewCell" customModule="RichReachTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qRy-c0-TPJ">
+                        <rect key="frame" x="20" y="0.0" width="241" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="Amc-fD-wSn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPP-5X-OnP">
+                        <rect key="frame" x="266" y="0.0" width="34" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="FBc-Jc-BIc"/>
+                            <constraint firstAttribute="width" constant="34" id="dRH-IQ-SAL"/>
+                        </constraints>
+                        <state key="normal" image="hand.thumbsup.fill" catalog="system"/>
+                    </button>
+                    <tabBar contentMode="scaleToFill" itemPositioning="centered" translatesAutoresizingMaskIntoConstraints="NO" id="6NF-sK-bCq">
+                        <rect key="frame" x="0.0" y="49" width="320" height="51"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <items>
+                            <tabBarItem title="" image="textformat.abc" catalog="system" id="LsV-ft-JPB">
+                                <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tabBarItem>
+                            <tabBarItem title="" image="paperclip" catalog="system" id="5wK-vu-W1Q"/>
+                            <tabBarItem title="" image="photo.fill.on.rectangle.fill" catalog="system" id="U2i-MT-GHr"/>
+                            <tabBarItem title="" image="camera.fill" catalog="system" id="GBw-AC-QAk"/>
+                            <tabBarItem image="mic.fill" catalog="system" id="Kvn-hn-Iel"/>
+                            <tabBarItem title="" image="location.circle.fill" catalog="system" id="Nwd-0g-dvc"/>
+                            <tabBarItem systemItem="more" id="QdS-z0-c3d"/>
+                        </items>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="hPP-5X-OnP" secondAttribute="trailing" constant="20" id="6HO-QK-4rY"/>
+                    <constraint firstItem="hPP-5X-OnP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="EK0-W5-a3F"/>
+                    <constraint firstAttribute="trailing" secondItem="6NF-sK-bCq" secondAttribute="trailing" id="FNk-qa-13q"/>
+                    <constraint firstAttribute="bottom" secondItem="6NF-sK-bCq" secondAttribute="bottom" id="GBR-88-klb"/>
+                    <constraint firstItem="6NF-sK-bCq" firstAttribute="top" secondItem="qRy-c0-TPJ" secondAttribute="bottom" constant="15" id="M3j-Cs-63u"/>
+                    <constraint firstItem="6NF-sK-bCq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jqV-Bn-Fgr"/>
+                    <constraint firstItem="hPP-5X-OnP" firstAttribute="leading" secondItem="qRy-c0-TPJ" secondAttribute="trailing" constant="5" id="nFR-tM-bx6"/>
+                    <constraint firstItem="qRy-c0-TPJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="w57-aL-gXK"/>
+                    <constraint firstItem="qRy-c0-TPJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="w7Q-we-4am"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="95.652173913043484" y="-65.625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="camera.fill" catalog="system" width="128" height="96"/>
+        <image name="hand.thumbsup.fill" catalog="system" width="128" height="124"/>
+        <image name="location.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="mic.fill" catalog="system" width="108" height="128"/>
+        <image name="paperclip" catalog="system" width="128" height="128"/>
+        <image name="photo.fill.on.rectangle.fill" catalog="system" width="128" height="98"/>
+        <image name="textformat.abc" catalog="system" width="128" height="61"/>
+    </resources>
+</document>
